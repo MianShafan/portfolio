@@ -7,8 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://shafantufail.dev/sitemap.xml
-Allow: /
-
-User-agent: *
-Allow: /
+Sitemap: https://shafanportfolio.pjsc.com.pk/sitemap.xml

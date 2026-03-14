@@ -3,7 +3,17 @@ import { ExternalLink, Eye } from "lucide-react";
 
 const categories = ["All", "Management", "POS", "Custom"];
 
-const projects = [
+type Project = {
+  title: string;
+  category: string;
+  description: string;
+  tech: string[];
+  link?: string;
+  coverImage?: string;
+  coverAlt?: string;
+};
+
+const projects: Project[] = [
   {
     title: "School Management System",
     category: "Management",
@@ -53,6 +63,20 @@ const projects = [
     tech: ["Laravel", "PHP", "MySQL", "REST API"],
     link: "https://javidcompany.pk/login.php",
   },
+  {
+    title: "Queue Management System",
+    category: "Management",
+    description: "Smart token and queue flow management for clinics, offices, and service counters with real-time status tracking and counter assignment.",
+    tech: ["Laravel", "MySQL", "Bootstrap", "jQuery"],
+  },
+  {
+    title: "Consultants Management System",
+    category: "Management",
+    description: "End-to-end consultant operations module for onboarding, assignments, scheduling, and performance monitoring in one dashboard.",
+    tech: ["Laravel", "MySQL", "JavaScript", "Bootstrap"],
+    coverImage: "/consultants-management.svg",
+    coverAlt: "Consultants management dashboard preview",
+  },
 ];
 
 const PortfolioTab = () => {
@@ -70,7 +94,8 @@ const PortfolioTab = () => {
         College Management System at college.javidcompany.pk, 
         POS System with delivery at sheraz.javidcompany.pk, 
         Advanced POS with permissions at posdemo.techatooz.com, 
-        MAT Stitching Unit Software at mat.pjsc.com.pk. 
+        MAT Stitching Unit Software at mat.pjsc.com.pk,
+        Queue Management System, and Consultants Management System.
         Shafan Tufail builds custom management systems, POS software, ERP solutions, 
         property management systems, inventory systems, billing software and enterprise web applications. 
         All projects are live and serving real customers across Pakistan. 
@@ -105,7 +130,16 @@ const PortfolioTab = () => {
           >
             {/* Header with gradient */}
             <div className="h-32 bg-gradient-to-br from-primary/10 via-muted to-primary/5 flex items-center justify-center relative">
-              <span className="text-3xl font-bold text-primary/20">{project.category === "POS" ? "POS" : project.category === "Management" ? "ERP" : "DEV"}</span>
+              {project.coverImage ? (
+                <img
+                  src={project.coverImage}
+                  alt={project.coverAlt ?? `${project.title} preview`}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <span className="text-3xl font-bold text-primary/20">{project.category === "POS" ? "POS" : project.category === "Management" ? "ERP" : "DEV"}</span>
+              )}
               {project.link && (
                 <a
                   href={project.link}

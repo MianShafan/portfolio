@@ -1,0 +1,48 @@
+<svg width="1200" height="480" viewBox="0 0 1200 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Consultants Management Dashboard</title>
+  <desc id="desc">Dashboard illustration for consultant management with profiles, schedule, and analytics cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#1A2437"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="240" y1="70" x2="960" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E2A3F"/>
+      <stop offset="1" stop-color="#131C2D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="275" y1="120" x2="700" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6B400"/>
+      <stop offset="1" stop-color="#FFD76A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <circle cx="1040" cy="95" r="145" fill="#F6B400" fill-opacity="0.10"/>
+  <circle cx="160" cy="425" r="120" fill="#F6B400" fill-opacity="0.08"/>
+
+  <rect x="240" y="70" width="720" height="340" rx="20" fill="url(#panel)" stroke="#2E3A4F"/>
+  <rect x="275" y="102" width="425" height="36" rx="10" fill="url(#accent)" fill-opacity="0.18"/>
+  <text x="295" y="126" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFD76A">Consultants Management</text>
+
+  <rect x="275" y="156" width="205" height="220" rx="14" fill="#111A29" stroke="#2A374D"/>
+  <circle cx="377" cy="205" r="34" fill="#27344A"/>
+  <circle cx="377" cy="201" r="16" fill="#FFD76A" fill-opacity="0.85"/>
+  <rect x="324" y="249" width="106" height="12" rx="6" fill="#42536E"/>
+  <rect x="302" y="271" width="150" height="10" rx="5" fill="#36455C"/>
+  <rect x="315" y="293" width="124" height="10" rx="5" fill="#36455C"/>
+  <rect x="332" y="326" width="90" height="28" rx="8" fill="#F6B400" fill-opacity="0.28"/>
+
+  <rect x="505" y="156" width="420" height="102" rx="14" fill="#111A29" stroke="#2A374D"/>
+  <rect x="535" y="184" width="210" height="12" rx="6" fill="#4B5E7A"/>
+  <rect x="535" y="208" width="140" height="10" rx="5" fill="#36455C"/>
+  <rect x="775" y="182" width="120" height="34" rx="10" fill="#F6B400" fill-opacity="0.22"/>
+
+  <rect x="505" y="274" width="200" height="102" rx="14" fill="#111A29" stroke="#2A374D"/>
+  <rect x="535" y="303" width="135" height="10" rx="5" fill="#4B5E7A"/>
+  <rect x="535" y="323" width="110" height="10" rx="5" fill="#36455C"/>
+  <rect x="535" y="343" width="90" height="10" rx="5" fill="#36455C"/>
+
+  <rect x="725" y="274" width="200" height="102" rx="14" fill="#111A29" stroke="#2A374D"/>
+  <path d="M758 346L787 312L818 330L848 288L891 334" stroke="#FFD76A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="891" cy="334" r="5" fill="#FFD76A"/>
+</svg>

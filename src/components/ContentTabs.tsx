@@ -10,6 +10,7 @@ const tabs = ["About", "Resume", "Portfolio", "Contact"];
 
 const ContentTabs = () => {
   const [active, setActive] = useState("About");
+  const today = new Date().toISOString().slice(0, 10);
 
   const pageTitles: Record<string, string> = {
     About: "Shafan Tufail | Full Stack Developer & Laravel Expert Pakistan",
@@ -52,7 +53,7 @@ const ContentTabs = () => {
         ))}
         <a
           href="/resume.pdf"
-          download="Shafan_Tufail_Resume.pdf"
+          download={`Shafan_Tufail_CV_${today}.pdf`}
           className="ml-2 flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-xs font-medium hover:bg-primary/90 transition-colors"
         >
           <Download size={13} />
